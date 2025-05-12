@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>เป็นแฟนกันน้า~ 😽</title>
+  <link href="https://fonts.googleapis.com/css2?family=Mali&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('https://i.imgur.com/2jFqL2D.png'); /* พื้นหลังลายแมว */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      font-family: 'Mali', cursive;
+      text-align: center;
+      padding-top: 80px;
+      color: #ff66a3;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      background-color: rgba(255, 255, 255, 0.7);
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 20px;
+    }
+
+    .button {
+      margin: 20px;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    #yes {
+      background-color: #ff99cc;
+      color: white;
+    }
+
+    #no {
+      background-color: #f0f0f0;
+      color: black;
+      position: relative;
+    }
+
+    #message {
+      margin-top: 40px;
+      font-size: 1.8rem;
+      color: #ff3399;
+      display: none;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 20px;
+    }
+
+    #cat-img {
+      margin-top: 20px;
+      width: 200px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>จะเป็นแฟนกับเราไหม~ 😽</h1>
+  <br>
+  <button class="button" id="yes">ตกลงนะ~ 💖</button>
+  <button class="button" id="no">ไม่เอาา 😼</button>
+
+  <div id="message">เย้! เหมียวดีใจมากเลย~ เราเป็นแฟนกันแล้วนะ 💞</div>
+  <img id="cat-img" src="https://i.imgur.com/O7bXKcF.png" alt="cute cat">
+
+  <script>
+    const yesBtn = document.getElementById('yes');
+    const noBtn = document.getElementById('no');
+    const msg = document.getElementById('message');
+    const catImg = document.getElementById('cat-img');
+
+    yesBtn.onclick = () => {
+      msg.style.display = 'block';
+      catImg.style.display = 'block';
+    };
+
+    noBtn.onmouseover = () => {
+      const x = Math.floor(Math.random() * (window.innerWidth - 150));
+      const y = Math.floor(Math.random() * (window.innerHeight - 150));
+      noBtn.style.position = 'absolute';
+      noBtn.style.left = x + 'px';
+      noBtn.style.top = y + 'px';
+    };
+  </script>
+
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
